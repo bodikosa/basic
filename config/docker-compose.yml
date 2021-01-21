@@ -5,6 +5,8 @@ services:
     image: postgres:12.1-alpine
     volumes:
       - ./docker/postgres/init_testing_db.sql:/docker-entrypoint-initdb.d/init_testing_db.sql
+    ports:
+       - 5432:5432
     environment:
       POSTGRES_USER: rest-api
       POSTGRES_PASSWORD: rest-api

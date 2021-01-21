@@ -1,0 +1,40 @@
+<button type="button" class="btn btn-success float-right" data-toggle="modal" data-target="#exampleModal">
+    Create
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create List</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Name" required>
+                        <div class="invalid-feedback">Please input valid</div>
+                    </div>
+
+                    <div class="form-group">
+                        <select class="custom-select" required>
+                            <option value="1">Number</option>
+                            <option value="2">String</option>
+                        </select>
+                        <div class="invalid-feedback">Select valid value</div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="value" placeholder="Value" required>
+                        <div class="invalid-feedback">Please input valid</div>
+                    </div>
+
+                    <button type="button" class="btn btn-primary float-right">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

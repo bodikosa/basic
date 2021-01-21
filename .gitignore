@@ -1,1 +1,4 @@
 /.idea
+
+/react-frontend/build
+/react-frontend/node_modules
